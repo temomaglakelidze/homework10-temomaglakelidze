@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1440px) {
+  .features-card {
+    margin-top: 94px;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+}
 @media only screen and (max-width: 942px) {
   header {
     padding: 0px 10px;
@@ -75,5 +83,30 @@
   }
   .companys img {
     width: 100px;
+  }
+  .big-card {
+    display: none;
+  }
+  .card-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+  }
+  .passive {
+    display: none;
+  }
+  .responsive-btn {
+    display: block;
+    max-width: 137px;
+    width: 100%;
+  }
+  .coments {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .coments-section {
+    padding: 50px 10px;
   }
 }

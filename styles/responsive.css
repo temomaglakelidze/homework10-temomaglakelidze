@@ -1,0 +1,79 @@
+@media only screen and (max-width: 942px) {
+  header {
+    padding: 0px 10px;
+  }
+  .nav-list {
+    column-gap: 16px;
+  }
+  .companys {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 665px) {
+  .nav-list,
+  .box {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+  header {
+    flex-direction: row-reverse;
+  }
+  main {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  .main-text {
+    margin-bottom: 30px;
+  }
+  .blur-section {
+    max-width: 350px;
+    width: 100%;
+    height: 400px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    border-radius: 50px;
+    gap: 40px;
+    padding-top: 70px;
+  }
+  .line {
+    display: none;
+  }
+  .direction {
+    display: block;
+    max-width: 280px;
+    width: 100%;
+    height: 25px;
+    border-radius: 10px;
+    border: none;
+  }
+  .direction-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .search-icon {
+    display: none;
+  }
+  .search-btn {
+    display: block;
+  }
+  .partners {
+    gap: 20px;
+    padding: 20px 0px 20px;
+  }
+  .partner-text {
+    text-align: center;
+  }
+  .companys {
+    gap: 10px;
+  }
+  .companys img {
+    width: 100px;
+  }
+}

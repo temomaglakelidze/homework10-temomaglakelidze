@@ -18,6 +18,9 @@
   .nav-list {
     column-gap: 16px;
   }
+  main {
+    padding: 185px 20px 370px;
+  }
   .companys {
     display: flex;
     flex-wrap: wrap;
@@ -29,6 +32,21 @@
   }
   .coments-section {
     padding: 50px 10px;
+  }
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .footer-row {
+    gap: 20px;
+  }
+  .footer-subscribe form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  footer {
+    padding: 10px;
   }
 }
 @media only screen and (max-width: 665px) {
@@ -121,5 +139,20 @@
   }
   .coments-section {
     padding: 50px 10px;
+  }
+  .footer-links {
+    display: none;
+  }
+  .footer-subscribe {
+    align-items: center;
+    margin: auto;
+  }
+  .footer-subscribe form {
+    align-items: center;
+  }
+  .footer-copyright {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
   }
 }

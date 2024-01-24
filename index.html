@@ -268,7 +268,7 @@
           <h2>Contact us</h2>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
-        <div class="contact-form">
+        <form class="contact-form">
           <div class="form-style">
             <label for="name">Name</label>
             <input type="text" class="contact-form-input" />
@@ -290,14 +290,16 @@
             <span class="chekbox-text">I accept the Terms</span>
           </div>
           <input type="submit" class="card-btn" />
-        </div>
+        </form>
       </div>
       <img src="image/sea-house.png" alt="white house" />
     </section>
     <footer>
       <div class="footer-row">
         <div class="footer-links">
-          <img src="image/EcoLodgy.svg" alt="eccolodgy" />
+          <a href="index.html"
+            ><img src="image/EcoLodgy.svg" alt="eccolodgy"
+          /></a>
           <ul class="footer-list">
             <li><a href="#">Link One</a></li>
             <li><a href="#">Link Two</a></li>
@@ -318,11 +320,19 @@
           </form>
           <p>
             By subscribing you agree to with our
-            <span class="policy">Privacy Policy</span>
+            <a href="#" class="policy"> Privacy Policy</a>
           </p>
         </div>
       </div>
-      <div class="footer-copyright"></div>
+      <div class="footer-line"><!--content in css--></div>
+      <div class="footer-copyright">
+        <ul class="footer-copyright-link">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Services</a></li>
+          <li><a href="#">Cookies Settings</a></li>
+        </ul>
+        <div class="copyright">© 2023 EcoLodgy. All rights reserved.</div>
+      </div>
     </footer>
   </body>
 </html>

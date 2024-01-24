@@ -32,23 +32,29 @@
         <p>Book the best winter holiday destination in the country.</p>
         <button>Book Now <img src="image/Vector.svg" alt="Vector" /></button>
       </div>
-      <div class="blur-section">
-        <div class="direction-div">
-          <a href="#">Where to?</a>
-          <input class="direction" type="text" placeholder="your joutney..." />
+
+      <form class="blur-section">
+        <div class="where-to-label">
+          <input class="direction-input" type="text" placeholder="Where To?" />
         </div>
         <div class="line"><!--content in css--></div>
-        <a href="#"
-          >Travel Type <img src="image/white-arrow.svg" alt="arrow"
-        /></a>
+        <select name="travel type" id="travel-type">
+          <option value="Travel Type">Travel Type</option>
+          <option value="Exploration travel">Exploration travel</option>
+          <option value="A cruise">A cruise</option>
+          <option value="Adventure tourism">Adventure tourism</option>
+          <option value="Foodies">Foodies</option>
+          <option value="Solo travel">Solo travel</option>
+          <option value="Active travellers">Active travellers</option>
+        </select>
         <div class="line"><!--content in css--></div>
-        <a href="#">
-          Duration
+        <div class="duration-div">
+          <input type="text" class="duration" placeholder="Duration" />
           <img src="image/white-arrow.svg" alt="arrow" />
-        </a>
+        </div>
         <img class="search-icon" src="image/search.svg" alt="search icon" />
         <button class="search-btn">Search</button>
-      </div>
+      </form>
     </main>
     <section class="partners">
       <div class="partner-text">
@@ -78,7 +84,13 @@
                 <h3>Short heading here</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <button class="card-btn">
-                  see more <img src="image/Right.svg" alt="Right arrow" />
+                  see more
+                  <img class="green" src="image/Right.svg" alt="Right arrow" />
+                  <img
+                    class="white"
+                    src="image/white-Right.svg"
+                    alt="Right arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -88,7 +100,13 @@
                 <h3>Short heading here</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <button class="card-btn">
-                  see more <img src="image/Right.svg" alt="Right arrow" />
+                  see more
+                  <img class="green" src="image/Right.svg" alt="Right arrow" />
+                  <img
+                    class="white"
+                    src="image/white-Right.svg"
+                    alt="Right arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -102,7 +120,16 @@
                 <h3>Short heading here</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <button class="card-btn">
-                  see more <img src="image/Right.svg" alt="Right arrow" />
+                  see more
+                  <img
+                    class="green"
+                    src="image/Right.svg"
+                    alt="Right arrow"
+                  /><img
+                    class="white"
+                    src="image/white-Right.svg"
+                    alt="Right arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -112,7 +139,16 @@
                 <h3>Short heading here</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <button class="card-btn">
-                  see more <img src="image/Right.svg" alt="Right arrow" />
+                  see more
+                  <img
+                    class="green"
+                    src="image/Right.svg"
+                    alt="Right arrow"
+                  /><img
+                    class="white"
+                    src="image/white-Right.svg"
+                    alt="Right arrow"
+                  />
                 </button>
               </div>
             </div>
@@ -131,7 +167,16 @@
               <button>
                 Book Now <img src="image/Vector.svg" alt="Vector" /></button
               ><button class="card-btn">
-                see more <img src="image/Right.svg" alt="Right arrow" />
+                see more
+                <img
+                  class="green"
+                  src="image/Right.svg"
+                  alt="Right arrow"
+                /><img
+                  class="white"
+                  src="image/white-Right.svg"
+                  alt="Right arrow"
+                />
               </button>
             </div>
           </div>
@@ -224,20 +269,60 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
         <div class="contact-form">
-          <label for="name">
-            <input type="text" />
-          </label>
-          <label for="email">
-            <input type="email" />
-          </label>
-          <label for="Message">
-            <input type="text" />
-          </label>
-          <input type="checkbox" />
-          <input type="submit" />
+          <div class="form-style">
+            <label for="name">Name</label>
+            <input type="text" class="contact-form-input" />
+          </div>
+          <div class="form-style">
+            <label for="email">Email</label>
+            <input type="email" class="contact-form-input" />
+          </div>
+          <div class="form-style">
+            <label for="Message">Message</label>
+            <textarea
+              class="contact-form-input contact-message"
+              placeholder="Type your message..."
+            >
+            </textarea>
+          </div>
+          <div class="checkbox-div">
+            <input type="checkbox" />
+            <span class="chekbox-text">I accept the Terms</span>
+          </div>
+          <input type="submit" class="card-btn" />
         </div>
       </div>
-      <img src="" alt="" />
+      <img src="image/sea-house.png" alt="white house" />
     </section>
+    <footer>
+      <div class="footer-row">
+        <div class="footer-links">
+          <img src="image/EcoLodgy.svg" alt="eccolodgy" />
+          <ul class="footer-list">
+            <li><a href="#">Link One</a></li>
+            <li><a href="#">Link Two</a></li>
+            <li><a href="#">Link Three</a></li>
+            <li><a href="#">Link Four</a></li>
+            <li><a href="#">Link Five</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <span>Subscribe</span>
+          <form>
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="footer-email"
+            />
+            <button class="footer-btn">Subscribe</button>
+          </form>
+          <p>
+            By subscribing you agree to with our
+            <span class="policy">Privacy Policy</span>
+          </p>
+        </div>
+      </div>
+      <div class="footer-copyright"></div>
+    </footer>
   </body>
 </html>

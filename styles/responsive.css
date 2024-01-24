@@ -6,7 +6,12 @@
     gap: 35px;
   }
 }
-@media only screen and (max-width: 942px) {
+@media only screen and (max-width: 1000px) {
+  .contact img {
+    display: none;
+  }
+}
+@media only screen and (max-width: 947px) {
   header {
     padding: 0px 10px;
   }
@@ -16,6 +21,14 @@
   .companys {
     display: flex;
     flex-wrap: wrap;
+  }
+  .coments {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .coments-section {
+    padding: 50px 10px;
   }
 }
 @media only screen and (max-width: 665px) {
